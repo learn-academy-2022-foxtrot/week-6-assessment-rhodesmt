@@ -12,6 +12,13 @@
 
 // --------------------1) Create a function that takes in an array of objects and returns an array with a sentence about each person with their name capitalized.
 
+// Jest template
+// describe ("functionNameHere", () => {
+//   it ("description of what the test function does/expected to do", () => {
+//     expect(functionNameHere(functionArgument)).toEqual(expected output here)
+//   })
+// })
+
 // a) Create a test with an expect statement using the variable provided.
 
 const people = [
