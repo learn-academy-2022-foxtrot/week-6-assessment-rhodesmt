@@ -14,7 +14,8 @@ Researched answer:
 
 2. Which RESTful routes must always be passed params? Why?
 
-Your answer:
+Your answer: The RESTful routes that must be passed params are show, update, and destroy.
+put/patch '/resources/:id' => 'resource#update' 
 
 Researched answer:
 
@@ -22,7 +23,8 @@ Researched answer:
 
 Your answer: 
 $ rails g model Model- generates a new rails model
-$ rails g controller Controller- 
+$ rails g controller Controller- generates a new controller for the requested model
+$ rails g migration - generates a new migration file for the app
 
 Researched answer:
 
