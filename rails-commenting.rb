@@ -9,7 +9,7 @@
 # ---1) Establishes a child blog controller BlogPostsController and defines new index
 class BlogPostsController < ApplicationController
   def index
-    # ---2) Sets index to @posts set to BlogsPost.all
+    # ---2) Sets index to @posts set to BlogsPost.all to display all current blog posts as the index page.
     @posts = BlogPost.all
   end
 
@@ -53,10 +53,10 @@ class BlogPostsController < ApplicationController
     end
   end
 
-  # ---9)
+  # ---9) Restricts where a param can be called and limits the action to the controller methods stated above.
   private
   def blog_post_params
-    # ---10)
+    # ---10) Establishes Blog Post params under the private keyword to limit the actions to those defined within the controller.
     params.require(:blog_post).permit(:title, :content)
   end
 end
