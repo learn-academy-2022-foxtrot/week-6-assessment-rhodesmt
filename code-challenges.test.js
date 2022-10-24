@@ -38,7 +38,6 @@ describe("hitchhikersGuide", () => {
 
 // b) Create the function that makes the test pass.
 
-
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
 // a) Create a test with an expect statement using the variables provided.
