@@ -10,7 +10,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 Your answer: (un)Fortunately, I happened across this same issue with my wildlife tracker I was building, but never fret! You can run $ rails db:rollback to undo your most recent rails migration and redo your rails g statement for the model. You can then add-in your foreign key into the rails g and run the migration. You should now be able to add has_many :students in cohort.rb and belongs_to :cohort in students.rb.
 
-Researched answer: The foreign key would be need to be with the student model so that it can be referenced in within the Cohort model. It would look like student_id:
+Researched answer: The foreign key would be need to be with the student model so that it can be referenced in within the Cohort model. It would look like cohort_id:
 
 2. Which RESTful routes must always be passed params? Why?
 
