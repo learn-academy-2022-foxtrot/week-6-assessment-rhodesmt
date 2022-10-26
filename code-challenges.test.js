@@ -37,6 +37,18 @@ describe("hitchhikersGuide", () => {
 // Expected output: ["Ford Prefect is a hitchhiker.", "Zaphod Beeblebrox is president of the galaxy.", "Arthur Dent is a radio employee."]
 
 // b) Create the function that makes the test pass.
+// Declare new function hitchhikersGuide that takes in arrays
+const hitchhikersGuide = (arr) => {
+  // .Map over the array to access the object.
+  return arr.map(
+    // Object.name to access the name within the object, use split to create an array from the name string.
+    (object) => `${object.name.split(" ").map((name) => 
+    // Use slice to cut the first char of the first and last night and toUpperCase to capitalize the first char. Then use join to bring the string back together and display through string interpolation the name and sentence about them returned.
+    name.slice(0, 1).toUpperCase() + name.slice(1)).join(" ")} is ${object.occupation}.`
+  );
+};
+
+// Test Pass! This was definitely the hardest of the three to do. Running map and then mapping again on the object was the biggest blocker for me I'd say.
 
 // --------------------2) Create a function that takes in a mixed data array and returns an array of only the REMAINDERS of the numbers when divided by 3.
 
